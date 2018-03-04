@@ -1,0 +1,31 @@
+<ul materialize="collapsible" class="collapsible" data-collapsible="accordion" id="main-collapse">
+  <li >
+    <div class="collapsible-header">
+        <p> 
+            <input type="checkbox" id="{{startPoint}}" (click)="changeField(startPoint,$event)"  #cbx [checked]="startPoint==currentField">
+               <label for="{{startPoint}}">{{fieldToName(startPoint)}}</label>  
+             </p>
+    </div>
+    <div class="collapsible-body"  style="padding:0;margin:0;">
+      <ul materialize="collapsible" class="collapsible" data-collapsible="accordion" >
+      <li *ngFor="let item of AllThemes"  #secondcollapse> 
+        <div class="collapsible-header">
+            <input type="checkbox" id="{{item}}" (click)="changeField(item,$event)" #cbx [checked]="item==currentField" >
+            <label for="{{item}}">{{fieldToName(item)}}</label>  
+        </div> 
+        <div class="collapsible-body">
+          <p *ngFor="let fields of getThemeFields(item)"> 
+         <input type="checkbox" id="{{fields}}" (click)="changeField(fields,$event)"  #cbx [checked]="fields==currentField">
+            <label for="{{fields}}">{{fieldToName(fields)}}</label>  
+          </p>
+        </div>
+      </li>
+       
+    </ul>
+
+      
+    </div>
+  </li>
+   
+</ul>
+<!-- [disabled]="layersFields.indexOf(item)==-1" -->

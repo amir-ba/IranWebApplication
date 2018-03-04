@@ -1,0 +1,29 @@
+<!-- <div id="detail-box" class='box'>
+    <h3 class='box-header'>داده ها</h3>
+    <h3 id='notifier'>عنصر مورد نظر را انتخاب کنید</h3>
+    
+    <div id="information-box"></div>
+    </div> -->
+
+<div class="card  ">
+    <div class="card-header">
+        <!-- <i class="small  material-icons arrow-icon ">chevron_right</i>  -->
+        <h5 class="card-title"> موضوع </h5>
+    </div>
+    <div class="card-content ">
+
+        <div id="base-layer"></div>
+        <div id="collapser1">
+            <ul class="collapsible "  id="level-cascader" data-collapsible="expandable"> 
+                <li  *ngFor="let level of levels" (click)="changeLevel(level)"  [class]="(level==current)?'condition':false" >
+                    <div  [class]="(level==current)?'condition collapsible-header':'collapsible-header'"  > {{getName(level)}}</div>
+                </li>
+            </ul>
+
+        </div>
+
+
+
+
+    </div>
+</div>

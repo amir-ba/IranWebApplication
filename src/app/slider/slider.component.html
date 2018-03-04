@@ -1,0 +1,25 @@
+<app-level-changer></app-level-changer>
+
+<a id="menu-slider"  (click)="toggleState()"[@heroState]="state">
+  <div id="menu-slider-arrow" [class]="state"></div>
+</a>
+<div id="module-container" [@sliderState]="state" >
+    <div class="row "> 
+        <div class="col s12">
+            <ul class="tabs"><div class="indicator blue-grey lighten-3" style="z-index:1"></div>
+
+                <li class="tab col s6  tabs-fixed-width "><a id="tab-1" data-target="#detail-tools">اطلاعات تکمیلی</a></li>
+                <li class="tab col s6  tabs-fixed-width"><a id="tab-2" class="active" data-target="#layer-tools">انتخاب موضوع</a></li>
+
+            </ul>
+        </div>
+        <div id="layer-tools"  ><app-box-layer-list class="col s12"></app-box-layer-list></div>
+        <div id="detail-tools" class="col s12"> <app-box-infobox ></app-box-infobox>
+         
+        </div>
+        <div class="col s12"><app-box-fieldswitch></app-box-fieldswitch>></div>
+
+      </div>
+
+
+</div>

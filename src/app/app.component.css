@@ -1,0 +1,15 @@
+@font-face {
+    font-family:'Yekan';/*تعریف یک نام برای فونت*/
+    src:url('../../fonts/Yekan.woff');/*اکسپلورر 9 به بعد*/
+    font-style:normal;
+    font-weight:normal;
+
+}
+app-slider {
+    text-align: right;
+    font-family:'Yekan';
+}
+app-map {
+margin: 0;
+}
+ 

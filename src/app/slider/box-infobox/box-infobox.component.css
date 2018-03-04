@@ -1,0 +1,17 @@
+.card-elements p.title {
+    color: #2d2d2d;
+    font-weight: 600;
+    margin: 0 0 5px 0;
+    /* overflow: hidden; */
+    text-overflow: ellipsis;
+    direction: rtl;
+}
+.card-elements p.caption {
+    font-weight: 400;
+    color: #aeaeae;
+    margin: 0px;
+    line-height: 21px;
+    /* white-space: nowrap; */
+    /* overflow: hidden; */
+    text-overflow: ellipsis;
+}

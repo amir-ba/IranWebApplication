@@ -1,0 +1,43 @@
+<div id="detail-tools" *ngIf="data">
+
+
+
+    <div id="details-card" class="card expanded ">
+
+        <div class="card-content  collapse show">
+            <div class="card-elements row">
+           
+                <i id="toggle-button" class="col s03 fa fa-area-chart">
+
+                </i>
+                <i id="toggle-button-piechart" class="col s03  fa fa-pie-chart"></i>
+                <div *ngIf="data">
+                    <div class=" col s12 " id="id-representer">
+                        <p class="title ">آدرس</p>
+                        <p class="caption"> {{data.address}}</p>
+                        <div *ngIf="data.ostan">
+                            <p class="title ">استان</p>
+                            <p class="caption"> {{data.ostan}}</p>
+                        </div>
+
+                    </div>
+
+                    <div class=" col s12 " id="property-representer">
+                        <p class="title ">{{fieldNamer(currentField)}} </p>
+                        <p class="caption right">{{data[currentField] || number }}</p>
+                        <div id="unit-representer">
+                            <p class="caption ">{{getunit(currentField)}}</p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <app-d3-bar-chart></app-d3-bar-chart>
+
+        </div>
+
+    </div>
+
+
+</div>

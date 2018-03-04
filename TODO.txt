@@ -1,0 +1,7 @@
+TODO:
+#fix routers for the tabs 
+#work out the disabled fields
+#work out the poisitoin bar chart 
+#ad the paralel graph to the map 
+#css beutify 
+#see if WMS faster 

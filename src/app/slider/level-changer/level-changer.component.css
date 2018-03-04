@@ -1,0 +1,8 @@
+button{
+    z-index: 100000000000;
+}
+#leveldeeper{
+    position: absolute;
+    top: 60px;
+    right: 300px;
+}

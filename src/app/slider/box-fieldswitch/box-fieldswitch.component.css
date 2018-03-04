@@ -1,0 +1,17 @@
+.collapsible {
+    text-align: right;
+    background-color: white;
+    
+}
+label {
+    display: block;
+    max-width: 100%;
+    margin-top: 6px;
+    font-weight: 700;
+}
+[type="checkbox"] + label {
+    padding-right: 25px;
+     font-size: 12px;
+
+}
+ 
