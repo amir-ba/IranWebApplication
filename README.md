@@ -7,10 +7,33 @@ A complete tutorial on setting up a highly scalable and configurable Angular 4 p
 - npm install
 - npm run start
 
+
+Open `http://localhost:8080/` in your browser to see the app
+
+Create a bundle for the browser.
+
+    npm run build
+
+and for production version 
+
+    npm run build:prod
+
+this creates the bundles in a new `dist` folder
+
+
+ 
+Start a debug server.
+
+    npm start
+	
+	
 ### Building AOT
 - Aot
   - npm run build:aot
 - Production
   - npm run build-aot-prod
+
+
+
 
 
